@@ -13,18 +13,15 @@
 - `JavaScript`로 풀이 가능한 문제
 ---
 ### :white_check_mark: 규칙
-#### 1. 문제 저장 규칙
+### 1. 문제 저장 규칙
 - `src/홍길동/{num}week/문제파일들`
 - ex) `src/김유라/1week/튜플.js`
 
-### 2. Branch 규칙
--  {이름}{week}으로 생성한다. <br>
--ex) 김유라-1week
-### 3. Pull Request 규칙
+### 2. Pull Request 규칙
 - PR title 은 {week}-{이름} 으로 한다.
 - ex) 1week - 김유라
 
-### 4. Merge 규칙 
+### 3. Merge 규칙 
 - 토요일 스터디가 끝난 이후 main Branch로 Merge한다. 
 ---
 ### :computer: 사용 언어
