@@ -1,3 +1,4 @@
+//문자열 정렬
 function solution(my_string) {
   return my_string
     .split("")
