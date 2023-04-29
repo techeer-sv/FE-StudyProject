@@ -1,11 +1,18 @@
-// // mine
-// function solution(my_string) {
-//   return my_string
-//     .split("")
-//     .filter((char) => !isNaN(char))
-//     .map((number) => parseInt(number))
-//     .sort((a, b) => a - b);
-// }
+// mine
+function solution(my_string) {
+  return my_string
+    .split("")
+    .filter((char) => !isNaN(char))
+    .map((number) => parseInt(number))
+    .sort((a, b) => a - b);
+}
+
+// other
+function solution(my_string) {
+  var answer = [];
+    return my_string.replace(/[^0-9]/g,"").split("").sort().map(Number);
+}
+
 
 // pratice
 function solution(my_string) {

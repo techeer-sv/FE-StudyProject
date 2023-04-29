@@ -5,3 +5,4 @@ function solution(box, n) {
     Math.floor(width / n) * Math.floor(length / n) * Math.floor(height / n)
   );
 }
+

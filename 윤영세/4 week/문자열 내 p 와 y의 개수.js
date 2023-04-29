@@ -28,9 +28,8 @@ function solution(s) {
   return answer;
 }
 
+
 // other
-function numPY(s) {
-  return (
-    s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length
-  );
+function numPY(s){
+    return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
 }

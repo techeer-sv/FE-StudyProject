@@ -36,6 +36,7 @@ function solution(letter) {
   return answer;
 }
 
+// for 반복문 돌리기
 function solution(letter) {
   let answer = "";
   const morse = {
@@ -72,3 +73,4 @@ function solution(letter) {
   }
   return answer;
 }
+

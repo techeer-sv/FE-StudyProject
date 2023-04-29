@@ -19,17 +19,3 @@
 //   }
 // }
 
-function solution(my_string) {
-  var answer = [];
-  let m = my_string.split("").map(Number);
-  my_string.split("");
-  for (let i = 0; i <= 9; i++) {
-    if (m == i) {
-      answer.push(i);
-    }
-  }
-  console.log(m);
-  return answer;
-}
-
-console.log(solution("hi12392"));

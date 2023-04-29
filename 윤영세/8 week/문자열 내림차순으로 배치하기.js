@@ -1,3 +1,4 @@
+//mine
 function solution(s) {
   var answer = "";
   var answer1 = [];
@@ -16,6 +17,10 @@ function solution(s) {
 
   answer = answer1.join("") + answer2.join("");
   return answer;
+}
+
+function solution(s) {
+  return s.split("").sort().reverse().join("");
 }
 
 // other
