@@ -3,11 +3,9 @@ function solution(n) {
 
   for (let i = 1; i <= n; i++) {
     ans *= i;
-
     if (ans === n) {
       return i;
     }
-
     if (ans > n) {
       return i - 1;
     }
