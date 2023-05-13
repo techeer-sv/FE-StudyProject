@@ -19,3 +19,40 @@ function solution(emergency) {
   rank.sort((a, b) => b - a);
   return emergency.map((n) => rank.indexOf(n) + 1);
 }
+
+function whatsYourFavorite() {
+  let fav = "javascript";
+  return new Promise((resolve, reject) => resolve(fav));
+}
+
+function displaySubject(subject) {
+  return new Promise((resolve, reject) => resolve(`Hello, ${subject}`));
+}
+
+whatsYourFavorite().then(displaySubject).then(console.log);
+
+async function whatsYourFavorite() {
+  let fav = "javascript";
+  return fav;
+}
+async function displaySubject(subject) {
+  return `Hello, ${subject}`;
+}
+
+whatsYourFavorite().then(displaySubject).then(console.log);
+
+async function whatsYourFavorite() {
+  let fav = "javascript";
+  return fav;
+}
+async function displaySubject(subject) {
+  return `Hello, ${subject}`;
+}
+
+async function init() {
+  const response = await whatsYourFavorite();
+  const result = await displaySubject(response);
+  console.log(result);
+}
+
+whatsYourFavorite().then(displaySubject).then(console.log);
