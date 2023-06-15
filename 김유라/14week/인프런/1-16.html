@@ -5,12 +5,22 @@
   </head>
   <body>
     <script>
+      //   function solution(s) {
+      // let answer = "";
+      // for (let i = 0; i < s.length; i++) {
+      //   if (i == s.indexOf(s[i])) {
+      //     answer += s[i];
+      //   }
+      // }
+      // return answer;
+
+      //   번외문제 k 반복갯수
       function solution(s) {
-        let answer = "";
-        for (let i = 0; i < s.length; i++) {
-          if (i == s.indexOf(s[i])) {
-            answer += s[i];
-          }
+        let answer = 0;
+        let pos = s.indexOf("k");
+        while (pos !== -1) {
+          answer++;
+          pos = s.indexOf("k", pos + 1);
         }
         return answer;
       }
