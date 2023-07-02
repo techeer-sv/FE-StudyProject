@@ -1,3 +1,4 @@
+// 최소 직사각형
 function solution(sizes) {
   let maxWidth = 0,
     maxHeight = 0;
