@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(arr) {
+        let answer = [];
+        let sortArr = [...arr].sort((a, b) => b - a);
+        for (let i = 0; i < sortArr.length; i++) {
+          answer.push(sortArr.indexOf(arr[i]) + 1);
+        }
+        return answer;
+      }
+
+      let arr = [87, 89, 92, 100, 76];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
