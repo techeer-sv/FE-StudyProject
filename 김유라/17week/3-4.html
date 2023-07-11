@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s, t) {
+        let answer = [];
+        let p = 100;
+        // 오른쪽
+        for (x of str) {
+          if (x === t) {
+            p = 0;
+            answer.push(p);
+          } else {
+            p++;
+            answer.push(p);
+          }
+        }
+        // 왼쪽
+        p = 100;
+        for (let i = str.length - 1; i >= 0; i--) {
+          if (str[i] === t) {
+            p = 0;
+          } else {
+            p++;
+            answer[i] = Math.min(answer[i], p);
+          }
+        }
+        return answer;
+      }
+
+      let str = "teachermode";
+      console.log(solution(str, "e"));
+    </script>
+  </body>
+</html>
