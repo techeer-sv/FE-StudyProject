@@ -1,5 +1,2 @@
-!edoc doog a tahW
-noitacitsufbo
-erafraw enirambus detcirtsernu yraurbeF fo tsrif eht no nigeb ot dnetni eW
-lla sees rodroM fo drol eht ,ssertrof sih nihtiw delaecnoC
-END
+4
+1 3 5 7
