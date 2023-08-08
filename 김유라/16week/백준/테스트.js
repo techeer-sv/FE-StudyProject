@@ -16,7 +16,7 @@
 
 //   console.log(num1 + num2);
 // }
-let input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+let input = require("fs").readFileSync("예제.txt").toString().split("\n");
 let count = Number(input[0]);
 let answer = "";
 
