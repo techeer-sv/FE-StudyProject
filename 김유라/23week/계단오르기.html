@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(n) {
+        // 한번에 1칸 아니면 2칸씩
+        // 한계단 오를때 : 1 => 1
+        // 두계단 오를때 : (1+1, 2) =>2
+        // 세칸 오를때 : (1+1+1 , 2+1, 1+2) => 3
+        // 네칸 오를때 : (1+1+1+1 , 1+1+2, 1+2+1, 2+1+1 ,2+2 ) => 5
+        let d = Array.from({ length: n + 1 }, () => 0);
+        d[1] = 1;
+        d[2] = 2;
+        d[3] = 3;
+        for (let i = 3; i <= n; i++) {
+          d[i] = d[i - 1] + d[i - 2];
+        }
+        return d[n];
+      }
+
+      console.log(solution(7));
+    </script>
+  </body>
+</html>
