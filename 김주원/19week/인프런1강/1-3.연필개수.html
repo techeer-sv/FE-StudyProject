@@ -5,15 +5,13 @@
     </head>
     <body>
         <script>
-            function solution(a, b, c){
+            function solution(n){
                 let answer;
-                if(a<b) answer=a;
-                else answer=b;
-                if(c<answer) answer=c; 
+                answer=Math.ceil(n/12);
                 return answer;
             }
 
-            console.log(solution(2, 5, 1));
+            console.log(solution(178));
         </script>
     </body>
 </html>
