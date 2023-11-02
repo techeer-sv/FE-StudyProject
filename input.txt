@@ -1,1 +1,2 @@
-one1 two2 three3 4fourr 5five 6six
+6
+10 30 10 20 20 10
